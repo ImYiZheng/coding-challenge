@@ -1,7 +1,7 @@
 from datetime import *
 
 class HashtagGraphEdges:
-  """ Double linked list method is used to build the Twitter hashtag graph. The double linked list stands for the structure of the hashtags according. 
+  """ Double linked list method is used to build the Twitter hashtag graph. The double linked list stands for the structure of the hashtags. 
   The keys of dictionary are the edges of two hastags(hashtage_pair in hashtage_pair_list) and the coressponding values are double linked nodes(storing the hashtage_pair and datetime)
   This data structure aims to get the total edges og tweets in latest 60s, the degrees of nodes in Twitter hashtag graph is 2*the number of edges.
   """
