@@ -20,17 +20,15 @@ The functions of my tool:
 ## Algorithm and Data Structure
 Implement the hashtag graph with double linked list.
 
-1. LRU (least recently used) algorithm: Aims to calculate the average degree with tweets in latest 60s and remove the timeout tweets. It also provides the edge number of every node. 
-   - It's implemented with HashMap and Double LinkedList. 
-   - The key of the HashMap is a hashtag_pair (e.g. ('#apache', '#hadoop')), while the value is a doubly LinkedList Node which contains the same hashtag_pair, the datetime of the tweet and the two linked list pointers, Next and Previous. 
-   - The Double LinkedList is sorted in ascending order with datetime, which would be helpful to remove timeout hashtag_pair. 
-   - Whenever I update the graph, I will add new edges and remove timeout edges, which are outside the latest 60 seconds window. Such data structure is **O(1) time complexity** when put or remove an element. 
-2. Graph Adjacent Set: Aims to get total nodes in the graph. 
-   - Store the whole graph information with HashMap, which key is node (hashtag) in the graph, value is a set of neighbor (hashtags appear in the same tweet with the key). 
-   - I choose HashMap and HashSet because get() and set() of them are **O(1) time complexity**. 
+1. HashtagGraphEdges: To get edges of hashtags in latest 60s and remove the timeout edges. 
+   - The double linked list node contains the hashtag_pair, the datetime of one tweet and the two pointers, Next and Previous. The double linked list is used for the structure of hashtag graph. For example, Whenever I receive one tweet, I will add new nodes and remove timeout nodes, which are outside the latest 60 seconds window in the linked list.     
+   - Use a dictionary to store the hashtag graph. The key of the dictionary is a hashtag_pair (e.g. ('#Spark', '#Apache')) and the values is the double linked list node. The number of the keys is the number of edges so the total degrees equals to 2*the number of edges
+
+2. HashtagGraphNodes: To get total nodes in the hashtag graph. 
+   - Store the nodes in hashtag graph in a dictionary.   
    - Whenever I update the graph, I will add new nodes and related neighbours and remove timeout nodes and related neighbours.
 
-The code files contain detailed explanation about every classes and functions.
+For detail information, please see the code files.
 
 
 ## How to test and run the code
