@@ -1,7 +1,3 @@
 Hello, my name is Yi Zheng, Let's get started!
 
-Documents:
-├── README.md 
-├── test.py
-├── src
-
+1. Documents:
