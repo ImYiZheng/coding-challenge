@@ -5,4 +5,4 @@ Hello, my name is Yi Zheng, Let's get started!
 (2) In insight_testsuite directory, I made two simple tests. You can find the corresponding outputs in the tweet_output directory.  
 (3) The codes are in src directory.
 2. How to run test:  
-I write all codes in Python, you can directly run test.py/ my-own-test-2-tweets-larger60s.py/ test-2-tweets-all-distinct.py and will get results in the corresponding directory.
+I write all codes in Python, you can directly run test.py or my-own-test-2-tweets-larger60s.py or test-2-tweets-all-distinct.py and will get results in the corresponding directory.
