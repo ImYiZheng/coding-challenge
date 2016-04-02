@@ -1,6 +1,3 @@
-2. How to run test:  
-I write all codes in Python, you can directly run test.py or my-own-test-2-tweets-larger60s.py or test-2-tweets-all-distinct.py and will get results in the corresponding directory.
-
 Hello, my name is Yi Zheng, Let's get started!
 ===========================================================
 Insight Data Engineering - Coding Challenge
@@ -9,8 +6,6 @@ Insight Data Engineering - Coding Challenge
 
    - In the tweet_input directory, the input tweets.txt has size 27.3M, including 9999 tweets, this file is from data-gen directory.The corresponding output output.txt is in tweet_output directory.   
    - In insight_testsuite directory, I made two simple tests. You can find the corresponding outputs in the tweet_output directory.
-
-
 
 ## Development Summary
 
