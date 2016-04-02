@@ -9,22 +9,25 @@ Insight Data Engineering - Coding Challenge
 
 ## Directory structure
 	├── README.md 
-	├── run.sh
+	├── test.py
 	├── src
-	│   └── average_degree.java
+	│   └── average_degree.py  
+	│   └── get_hashtag_graph.py  
+	│   └── get_tweet_info.py
 	├── tweet_input
 	│   └── tweets.txt
 	├── tweet_output
 	│   └── output.txt
 	└── insight_testsuite
-	    ├── run_tests.sh
+	    ├── my-own-test-2-tweets-larger60s.py  
+	    ├── test-2-tweets-all-distinct.py
 	    └── tests
 	        └── test-2-tweets-all-distinct
 	        │   ├── tweet_input
 	        │   │   └── tweets.txt
 	        │   └── tweet_output
 	        │       └── output.txt
-	        └── your-own-test
+	        └── my-own-test-2-tweets-larger60s
 	            ├── tweet_input
 	            │   └── tweets.txt
 	            └── tweet_output
