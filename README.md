@@ -9,17 +9,16 @@ Insight Data Engineering - Coding Challenge
 
 ## Development Summary
 
-I write all codes in Python.
+I write all codes in Python.  
+
 The functions of my tool:
 
 1. Extract the hashtags and created_at fields from the raw JSON tweets that come from a prepared tweets file.
-2. Calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears.
-3. Based on feature 1 and feature 2, I implement the tool in 2 ways: process pre_created local tweets and process real time tweets. 
-   - Process local tweets to get performance data of the tool. The experiment data is about 8 seconds to parse 18729 tweets. 
-   - Process real time tweets to meet higher requirement
+2. Build a Twitter hashtag graph.
+3. Calculate the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and update this each time a new tweet appears.
 
 ## Algorithm and Data Structure
-Implement the hashtag graph with LRU algorithm and graph adjacent set.
+Implement the hashtag graph with double linked list.
 
 1. LRU (least recently used) algorithm: Aims to calculate the average degree with tweets in latest 60s and remove the timeout tweets. It also provides the edge number of every node. 
    - It's implemented with HashMap and Double LinkedList. 
@@ -40,12 +39,4 @@ The code files contain detailed explanation about every classes and functions.
 - run_realtime.sh : run script that process real time tweets 
 
 **Prerequiste**   
-To run any program, you need some general python libraries, like json, os, sys, datetime, dateutil, re, string.   
-To run run_realtime.sh, you need to install tweepy in your machine (try command line: pip install tweepy). You also need ./data-gen/.twitter, and .twitter should contains twitter credential as following.   
-
-	{
-	"access_token":"XXXXXX",
-	"access_token_secret":"XXXXXX",
-	"consumer_key":"XXXXXX",
-	"consumer_secret":"XXXXXX"
-	}
+To run any program, you need some general python libraries, like json, sys, datetime.
