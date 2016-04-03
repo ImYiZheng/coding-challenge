@@ -50,7 +50,7 @@ class AvgDegree:
           if len(self.nodes.nodes) == 0:
             output.write(str(0) + '\n')
           else:
-            output.write(format(2.0 * len(self.edges.edges) / len(self.nodes.nodes), '.3f') + '\n')
+            output.write(format(2.0 * len(self.edges.edges) / len(self.nodes.nodes), '.2f') + '\n')
     tweets.close() 
     output.close()
     return count
