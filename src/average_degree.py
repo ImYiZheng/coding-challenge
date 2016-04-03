@@ -30,7 +30,7 @@ class AvgDegree:
       self.nodes.get_nodes(hashtag_pair_list)
       self.nodes.remove_nodes(remove_edges)
       return hashtag_pair_list
-    return None, None
+    return None
   
   # Recevie each tweet from input tweet file.
   # Update the Twitter hashtag graph each time receving a new tweet and hence, output the average degree of the graph
@@ -38,12 +38,14 @@ class AvgDegree:
   def output_avg_degree(self):
     output = open(self.output_file_name, 'w')
     is_start = False   
-    count = 0
+    count_total_tweets = 0    #include the rate limiting messages (e.g. {"limit": {"track":5,"timestamp_ms":"1446218985743"} } ), which need to be properly removed.
+    count_valid_tweets = 0
     with open(self.input_file_name) as tweets:
       for tweet in tweets:
-        count += 1
+        count_total_tweets += 1
         hashtag_pair_list = self.add_one_tweet(tweet)
-        if hashtag_pair_list != None: 
+        if hashtag_pair_list != None:
+          count_valid_tweets += 1
           if is_start == False:
             is_start = True
             print 'Start calculating the average degree of a vertex in a Twitter hashtag graph for the last 60 seconds, and updating this each time a new tweet appears'
@@ -53,4 +55,4 @@ class AvgDegree:
             output.write(format(2.0 * len(self.edges.edges) / len(self.nodes.nodes), '.2f') + '\n')
     tweets.close() 
     output.close()
-    return count
+    return count_total_tweets, count_valid_tweets
