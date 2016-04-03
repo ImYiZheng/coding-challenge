@@ -9,7 +9,10 @@ Insight Data Engineering - Coding Challenge
 
 ## Directory structure
 	├── README.md 
-	├── test.py
+	├── test.py  
+	├── average_degree.py  
+	├── get_hashtag_graph.py  
+	├── get_tweet_info.py
 	├── src
 	│   └── average_degree.py  
 	│   └── get_hashtag_graph.py  
