@@ -58,7 +58,7 @@ For detail information, please see the code files.
 
 
 ## How to test and run the code  
-After downloading the zip file and uncompress it, you can run xxx.py directly such as python xxx.py
+After downloading the zip file and uncompress it, you can run xxx.py directly such as python xxx.py in command line
 - test.py : run test.py directly
 - my-own-test-2-tweets-larger60s.py : run my-own-test-2-tweets-larger60s.py directly
 - test-2-tweets-all-distinct.py : run test-2-tweets-all-distinct.py directly
