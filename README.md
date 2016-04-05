@@ -4,7 +4,7 @@ Insight Data Engineering - Coding Challenge
 
 ## Quick test
 
-   - In the tweet_input directory, the input tweets.txt has size 27.3M, including 9999 tweets, 9295 tweets are valid and processed. This file is from data-gen directory.The corresponding output output.txt is in tweet_output directory.   
+   - In the tweet_input directory, the input tweets.txt has size 27.3M, including 9999 tweets, 9295 tweets are valid and processed(invalid tweet, e.g. {"limit": {"track":5,"timestamp_ms":"1446218985743"} } will be removed by my tool). This file is from data-gen directory.The corresponding output output.txt is in tweet_output directory.   
    - In insight_testsuite directory, I made two simple tests. You can find the corresponding outputs in the tweet_output directory.
 
 ## Directory structure
