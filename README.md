@@ -64,7 +64,12 @@ For detail information, please see the code files.
 In windows, after downloading the zip file and uncompress it, you can run xxx.py directly such as python xxx.py in command line. Then find the ouput.txt in corresponding directory.
 - test.py : run test.py directly
 - my-own-test-2-tweets-larger60s.py : run my-own-test-2-tweets-larger60s.py directly
-- test-2-tweets-all-distinct.py : run test-2-tweets-all-distinct.py directly
+- test-2-tweets-all-distinct.py : run test-2-tweets-all-distinct.py directly  
+  
+or  
+run run_test.sh
+run run_my-own-test-2-tweets-larger60s.sh
+run run_test-2-tweets-all-distinct.sh
 
 **Prerequiste**   
 To run any program, you need some general python libraries, like json, sys, datetime.
