@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
 
-# argv[0]: script that process pre created tweets
-# argv[1]: directory of pre_create_tweet file
-# argv[2]: directory of feature 1's result
-# argv[3]: directory of feature 2's result
+# argv[0]: codes that process input file
+# argv[1]: directory of input file
+# argv[2]: directory of output file
+
 python ./src/testsh.py ./tweet_input/tweets.txt ./tweet_output/output.txt
