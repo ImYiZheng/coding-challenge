@@ -1,6 +1,7 @@
 Hello, my name is Yi Zheng, Let's get started!
 ===========================================================
-Insight Data Engineering - Coding Challenge
+Insight Data Engineering - Coding Challenge  
+https://github.com/InsightDataScience/coding-challenge
 
 ## Quick test
 
